@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Assignment #2 — Task 1 (div + floats)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="styles-task1.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <div class="site-header">
+    <h1>Task 1</h1>
+    <p class="tagline">Only &lt;div&gt; + floats/positioning. Pink &amp; DarkRed theme.</p>
+  </div>
+
+  <!-- Navbar -->
+  <div class="site-nav">
+    <a class="nav-link active" href="task1-layout.html" title="Task 1">Task 1: Layout</a>
+    <a class="nav-link" href="tribute.html" title="Task 2">Task 2: Tribute</a>
+    <a class="nav-link" href="table-form.html" title="Task 3">Task 3: Table &amp; Form</a>
+    <a class="nav-link" href="wireframes.html" title="Task 4">Task 4: Wireframes</a>
+  </div>
+
+  <!-- Two-column area -->
+  <div class="main two-col clearfix">
+    <!-- Sidebar  -->
+    <div class="sidebar">
+      <div class="sidebar-title">Menu</div>
+      <div class="menu-item"><a href="#colors">Colors</a></div>
+      <div class="menu-item"><a href="#fonts">Fonts</a></div>
+      <div class="menu-item"><a href="#layout">Layout</a></div>
+    </div>
+
+    <!-- Content  -->
+    <div class="content" id="content">
+      <div class="content-section" id="colors">
+        <h2>Section: Colors</h2>
+        <p><em>Delicate pink background,DarkRed accents,visible borders,indents, and shadows</em></p>
+      </div>
+
+      <div class="content-section" id="fonts">
+        <h2>Section: Fonts</h2>
+        <p><em>System sans-serif, increased line spacing for readability.</em><code>styles-task1.css</code>.</p>
+      </div>
+
+      <div class="content-section" id="layout">
+        <h2>Section: Layout</h2>
+        <p><em>The two-column layout is created <strong>only</strong> using <strong>&lt;div&gt;</strong> and <strong>float</strong>.No Flexbox or Grid.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="site-footer">
+    <p>© 2025 Assem Rakhmanova, SE-2428/ All rights reserved</p>
+  </div>
+</body>
+</html>

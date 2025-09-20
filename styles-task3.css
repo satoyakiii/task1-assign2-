@@ -1,0 +1,159 @@
+/* ===== Theme ===== */
+:root{
+  --pink:#FFC0CB;
+  --darkred:#8B0000;
+  --ink:#2a1a1a;
+  --card:#ffffff;
+  --muted:#faf4f6;
+  --border:rgba(139,0,0,.22);
+  --shadow:rgba(139,0,0,.12);
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  font-family:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color:var(--ink);
+  line-height:1.7;
+  background: linear-gradient(180deg, rgba(255,192,203,.25), rgba(255,192,203,.06)) fixed, #fff;
+}
+
+/* ===== Header / Navbar  ===== */
+.site-header{
+  background: linear-gradient(90deg, var(--pink), #ffd6de);
+  color: var(--darkred);
+  padding: 24px 18px 16px;
+  border-bottom: 4px solid rgba(139,0,0,.18);
+  box-shadow: 0 6px 18px var(--shadow);
+  text-align: center;
+}
+.logo{
+  margin:0 0 8px;
+  font-family:"Italianno", "Times New Roman", cursive;
+  font-weight:400;
+  font-size:56px;
+  line-height:1.1;
+}
+.site-nav .nav-link{
+  display:inline-block;
+  color:var(--darkred);
+  text-decoration:none;
+  background: rgba(255,192,203,.3);
+  padding:8px 12px;
+  margin:0 6px 6px 0;
+  border-radius:12px;
+  border:1px solid transparent;
+  font-weight:600;
+  transition: all .18s ease;
+}
+.site-nav .nav-link:hover{ background: rgba(255,192,203,.48); border-color: var(--border); }
+.site-nav .nav-link.active{ background: rgba(255,192,203,.75); border-color: var(--darkred); }
+
+/* ===== Content wrapper ===== */
+.content{
+  max-width: 900px;
+  margin: 24px auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 22px 28px;
+  box-shadow: 0 10px 24px var(--shadow);
+}
+.content h2{
+  font-family:"Italianno", "Times New Roman", cursive;
+  font-weight:400;
+  font-size:38px;
+  color:var(--darkred);
+  margin: 0 0 8px;
+  border-left: 6px solid var(--darkred);
+  padding-left: 10px;
+  background: rgba(255,192,203,.18);
+  border-radius: 8px;
+}
+
+/* ===== TABLE ===== */
+.table-wrap{ overflow-x:auto; }
+.grades{
+  width:100%;
+  border-collapse: collapse; /* для аккуратных границ */
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius: 12px;
+}
+.grades thead th{
+  background: var(--darkred);
+  color:#fff;
+  text-align:center;
+  padding:10px 12px;           /* читаемость */
+}
+.grades td, .grades th{
+  border:1px solid var(--border);
+  padding:10px 12px;           /* читаемость */
+  text-align:center;           /* центрирование текста */
+  vertical-align:middle;
+}
+.grades tbody tr:nth-child(odd){ background: var(--muted); } /* зебра */
+.grades tbody tr.highlight-row{ background: #ffe3e9; }       /* спец-подсветка */
+.muted{ color:#6e3636; }
+
+/* ===== FORM ===== */
+.feedback{
+  width: 520px;                 /* фиксированная ширина */
+  max-width: 100%;
+  margin: 8px auto 0;           /* центрирование формы */
+  background: #fff7f9;          /* нежно-розовый фон формы */
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 18px 18px;
+  box-shadow: 0 8px 20px var(--shadow);
+}
+.form-row{ margin-bottom: 12px; }
+.form-row label{
+  display:block;
+  font-weight:700;              /* жирные лейблы */
+  margin-bottom: 6px;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+  width:100%;                   /* одинаковая ширина */
+  padding:10px 12px;
+  border:1px solid var(--border);
+  border-radius:10px;           /* скругления */
+  outline:none;
+}
+textarea{ resize: vertical; }
+
+fieldset.form-row{
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 12px;
+}
+legend{ padding:0 6px; color:var(--darkred); font-weight:600; }
+.radio{ margin-right: 14px; }
+
+.form-actions{ text-align: right; }
+.btn{
+  display:inline-block;
+  padding:10px 16px;
+  background: var(--darkred);
+  color:#fff;
+  text-decoration:none;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  box-shadow: 0 8px 18px var(--shadow);
+  transition: transform .12s ease, opacity .12s ease;
+}
+.btn:hover{ transform: translateY(-1px); opacity:.96; }
+
+/* ===== Footer ===== */
+.site-footer{
+  text-align:center;
+  color:#fff;
+  background: var(--darkred);
+  padding: 14px 10px 18px;
+  border-top: 4px solid rgba(139,0,0,.18);
+  margin-top: 28px;
+}

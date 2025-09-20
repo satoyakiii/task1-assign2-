@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task 3 — Table & Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Italianno&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-task3.css" />
+</head>
+<body>
+  <!-- NAVBAR  -->
+  <div class="site-header">
+    <h1 class="logo">Task 3 — Table & Form</h1>
+    <div class="site-nav">
+      <a class="nav-link" href="task1-layout.html">Task 1: Layout</a>
+      <a class="nav-link" href="exercise1/index.html">Task 2: Tribute</a>
+      <a class="nav-link active" href="table-form.html">Task 3: Table &amp; Form</a>
+      <a class="nav-link" href="wireframes.html">Task 4: Wireframes</a>
+    </div>
+  </div>
+
+  <main class="content">
+    <!-- ===== TABLE SECTION ===== -->
+    <h2 id="grades-title">Student Grades</h2>
+
+    <div class="table-wrap">
+      <table class="grades">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td rowspan="2">A. Rakhmanova</td>
+            <td>Web Tech</td>
+            <td>95</td>
+            <td class="muted">Good Interface</td>
+          </tr>
+          <tr class="highlight-row">
+            <td>DBMS</td>
+            <td>98</td>
+            <td class="muted">Great SQL queries</td>
+          </tr>
+
+          <tr>
+            <td>Aisana Kuanyshbek</td>
+            <td>Algorithms</td>
+            <td>88</td>
+            <td class="muted">Good recursion reasoning</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ===== FORM SECTION ===== -->
+    <h2>Feedback Form</h2>
+    <form class="feedback" action="#" method="post">
+      <div class="form-row">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required />
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" required />
+      </div>
+
+      <div class="form-row">
+        <label for="role">Role</label>
+        <select id="role" name="role">
+          <option>Student</option>
+          <option>Teacher</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <fieldset class="form-row">
+        <legend>Was this assignment clear?</legend>
+        <label class="radio"><input type="radio" name="clarity" value="yes" checked /> Yes</label>
+        <label class="radio"><input type="radio" name="clarity" value="no" /> No</label>
+      </fieldset>
+
+      <div class="form-row">
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Your feedback..."></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button id="submitBtn" class="btn" type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Assem Rakhmanova, SE-2428</p>
+  </footer>
+</body>
+</html>
